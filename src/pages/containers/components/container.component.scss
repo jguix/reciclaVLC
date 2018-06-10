@@ -1,0 +1,25 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    display: flex;
+
+    ion-card {
+        position: relative;
+        text-align: center;
+    }
+
+    .container-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-content {
+        flex: 1;
+    }
+
+    .container-title {
+        background-color: #a6dba6;
+        font-weight: 800;
+        color: #f6fff6
+    }
+}

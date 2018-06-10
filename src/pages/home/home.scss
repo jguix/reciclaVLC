@@ -1,25 +1,42 @@
 page-home {
+    font-family: 'Montserrat', sans-serif;
     .home-menu {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    ion-card {
+        position: relative;
+        text-align: center;
+    }
+    
+    .home-section {
         display: flex;
         flex-direction: column;
-        height: 100%;
     }
 
-    .home-section {
+    .home-section-content {
         flex: 1;
-        margin: 10px;
     }
 
-    .what {
-        background-color: #fcf1cf;
-    }
-
-    .where {
+    .home-section-title {
         background-color: #a6dba6;
+        font-weight: 800;
+        color: #f6fff6
+    }
+
+    .materials {
+        // background-color: #fcf1cf;
+    }
+
+    .containers {
+        // background-color: #a6dba6;
     }
 
     .around-me {
-        background-color: #9ec3f3;
+        // background-color: #9ec3f3;
     }
 
 }

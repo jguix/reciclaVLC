@@ -3,6 +3,9 @@ import { NavController } from 'ionic-angular';
 import { environment } from '../../environments/environment';
 import { AppCiudadService } from '../../app/services/app-ciudad.service';
 import { ContenedorTipo } from '../../app/services/contenedor.model';
+import { ContainersPage } from '../containers/containers';
+import { MaterialsPage } from '../materials/materials';
+import { AroundMePage } from '../around-me/around-me';
 
 @Component({
   selector: 'page-home',
@@ -22,4 +25,17 @@ export class HomePage {
     });
 
   }
+
+  goToMaterials() {
+    this.navCtrl.push(MaterialsPage);
+  }
+
+  goToContainers() {
+    this.navCtrl.push(ContainersPage);
+  }
+
+  goToAroundMe() {
+    this.navCtrl.push(AroundMePage);
+  }
+
 }

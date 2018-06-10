@@ -1,7 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>reciclaVLC</ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content>
   <div class="home-menu">
-      <div class="home-section what">QUÈ RECICLAR</div>
-      <div class="home-section where">ON RECICLAR</div>
-      <div class="home-section around-me">PROP DE MI</div>
+
+    <ion-card class="home-section materials" (tap)="goToMaterials()">
+      <ion-card-content class="home-section-content">
+      </ion-card-content>
+      <ion-row class="home-section-title">
+        <ion-col>
+          QUÈ RECICLAR
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  
+    <ion-card class="home-section containers" (tap)="goToContainers()">
+      <ion-card-content class="home-section-content">
+      </ion-card-content>
+      <ion-row class="home-section-title">
+        <ion-col>
+          ON RECICLAR
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  
+    <ion-card class="home-section around-me" (tap)="goToAroundMe()">
+        <ion-card-content class="home-section-content">
+        </ion-card-content>
+        <ion-row class="home-section-title">
+        <ion-col>
+            PROP DE MI
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
   </div>
 </ion-content>
