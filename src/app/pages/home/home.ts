@@ -6,6 +6,7 @@ import { ContenedorTipo } from '../../services/contenedor-tipo.model';
 import { ContainersPage } from '../containers/containers';
 import { MaterialsPage } from '../materials/materials';
 import { AroundMePage } from '../around-me/around-me';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'page-home',
@@ -17,8 +18,11 @@ export class HomePage {
   results: any;
 
   constructor(public navCtrl: NavController,
-    private appCiudadService: AppCiudadService) {
+    private appCiudadService: AppCiudadService,
+    private translate: TranslateService) {
     
+    translate.setDefaultLang('ca');
+
     this.appCiudadService.contenedores('39471213', '-381494', ContenedorTipo.ROPA).subscribe((results) => {
       console.log('contenedores', results);
       this.results = results;

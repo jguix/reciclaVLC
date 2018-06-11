@@ -1,0 +1,24 @@
+{
+    "HOME": {
+        "SECTION": {
+            "MATERIALS": {
+                "TITLE": "QUÈ RECICLAR"
+            },
+            "CONTAINERS": {
+                "TITLE": "ON RECICLAR"
+            },
+            "AROUND_ME": {
+                "TITLE": "PROP DE MI"
+            }
+        }
+    },
+    "CONTAINER_NAME_PILAS": "piles",
+    "CONTAINER_NAME_ACEITE": "oli",
+    "CONTAINER_NAME_ROPA": "roba",
+    "CONTAINER_NAME_RESIDUOS": "residus",
+    "CONTAINER_NAME_ENVASES": "envasos",
+    "CONTAINER_NAME_CARTON": "cartó",
+    "CONTAINER_NAME_VIDRIO": "vidre",
+    "CONTAINER_NAME_ORGANICO": "orgànic",
+    "CONTAINER_NAME_PUNTO_VERDE": "punt verd"
+}

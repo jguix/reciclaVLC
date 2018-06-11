@@ -1,0 +1,24 @@
+{
+    "HOME": {
+        "SECTION": {
+            "MATERIALS": {
+                "TITLE": "QUÉ RECICLAR"
+            },
+            "CONTAINERS": {
+                "TITLE": "DÓNDE RECICLAR"
+            },
+            "AROUND_ME": {
+                "TITLE": "CERCA DE MI"
+            }
+        }
+    },
+    "CONTAINER_NAME_PILAS": "pilas",
+    "CONTAINER_NAME_ACEITE": "aceite",
+    "CONTAINER_NAME_ROPA": "ropa",
+    "CONTAINER_NAME_RESIDUOS": "residuos",
+    "CONTAINER_NAME_ENVASES": "envases",
+    "CONTAINER_NAME_CARTON": "cartón",
+    "CONTAINER_NAME_VIDRIO": "vidrio",
+    "CONTAINER_NAME_ORGANICO": "orgánico",
+    "CONTAINER_NAME_PUNTO_VERDE": "punto verde"
+}

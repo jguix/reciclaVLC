@@ -1,10 +1,10 @@
 <div class="container">
-    <ion-card class="container-card" (tap)="goToContainerPage(name + 'Page')">
+    <ion-card class="container-card" (tap)="goToContainerPage(type + 'Page')">
       <ion-card-content class="container-content">
       </ion-card-content>
       <ion-row class="container-title">
         <ion-col>
-          {{type | uppercase}}
+          {{'CONTAINER_NAME_' + type | uppercase | translate | uppercase}}
         </ion-col>
       </ion-row>
     </ion-card>
