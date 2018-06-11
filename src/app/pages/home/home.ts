@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { environment } from '../../environments/environment';
-import { AppCiudadService } from '../../app/services/app-ciudad.service';
-import { ContenedorTipo } from '../../app/services/contenedor.model';
+import { environment } from '../../../environments/environment';
+import { AppCiudadService } from '../../services/app-ciudad.service';
+import { ContenedorTipo } from '../../services/contenedor-tipo.model';
 import { ContainersPage } from '../containers/containers';
 import { MaterialsPage } from '../materials/materials';
 import { AroundMePage } from '../around-me/around-me';

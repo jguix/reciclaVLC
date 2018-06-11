@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 
 })
 export class ContainerComponent {
-  @Input() name: string;
+  @Input() type: string;
 
   constructor(public navCtrl: NavController) {
 

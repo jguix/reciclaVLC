@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>reciclaVLC</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="containers-grid">
+
+    <container *ngFor="let type of containerTypes" [type]="type"></container>
+
+  </div>
+</ion-content>

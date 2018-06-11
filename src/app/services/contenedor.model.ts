@@ -1,3 +1,5 @@
+import { ContenedorTipo } from './contenedor-tipo.model';
+
 export interface Contenedor {
     lat: number;
     lon: number;
@@ -5,15 +7,4 @@ export interface Contenedor {
     direccion: string;
     tipo: ContenedorTipo;
     subtipo: string;
-}
-
-export enum ContenedorTipo {
-    PILAS = 'pilas',
-    ACEITE = 'aceite',
-    ROPA = 'ropa',
-    RESIDUOS = 'residuos',
-    ENVASES = 'envases',
-    CARTON = 'carton',
-    VIDRIO = 'vidrio',
-    ORGANICO = 'organico'
 }
