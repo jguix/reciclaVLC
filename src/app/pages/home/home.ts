@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { environment } from '../../../environments/environment';
-import { AppCiudadService } from '../../services/app-ciudad.service';
-import { ContenedorTipo } from '../../services/contenedor-tipo.model';
-import { ContainersPage } from '../containers/containers';
-import { MaterialsPage } from '../materials/materials';
-import { AroundMePage } from '../around-me/around-me';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from '../../../environments/environment';
+import { AppCiudadService, ContenedorTipo } from '../../services';
+import { ContainersPage } from '../containers';
+import { MaterialsPage } from '../materials';
+import { AroundMePage } from '../around-me';
 
 @Component({
   selector: 'page-home',

@@ -2,11 +2,10 @@ import { Component, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'container',
-  templateUrl: 'Container.component.html',
-
+  selector: 'container-card',
+  templateUrl: 'container-card.component.html'
 })
-export class ContainerComponent {
+export class ContainerCardComponent {
   @Input() type: string;
 
   constructor(public navCtrl: NavController) {

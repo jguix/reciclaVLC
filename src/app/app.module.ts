@@ -5,16 +5,13 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { App } from './app.component';
-import { HomePage } from './pages/home/home';
-import { AppCiudadRemote } from './services/app-ciudad.remote';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { AppCiudadService } from './services/app-ciudad.service';
-import { ContainersPage } from './pages/containers/containers';
-import { AroundMePage } from './pages/around-me/around-me';
-import { MaterialsPage } from './pages/materials/materials';
-import { ContainerComponent } from './pages/containers/components/container.component';
+import { HomePage } from './pages';
+import { AppCiudadService, AppCiudadRemote } from './services';
+import { AroundMePage, ContainersPage, MaterialsPage } from './pages';
+import { ContainerCardComponent } from './pages';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,7 +24,7 @@ export function createTranslateLoader(http: HttpClient) {
     ContainersPage,
     MaterialsPage,
     HomePage,
-    ContainerComponent,
+    ContainerCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +45,7 @@ export function createTranslateLoader(http: HttpClient) {
     ContainersPage,
     MaterialsPage,
     HomePage,
-    ContainerComponent,
+    ContainerCardComponent,
   ],
   providers: [
     StatusBar,
