@@ -20,7 +20,7 @@ export class HomePage {
     private appCiudadService: AppCiudadService,
     private translate: TranslateService) {
     
-    translate.setDefaultLang('ca');
+    this.translate.setDefaultLang('ca');
 
     this.appCiudadService.contenedores('39471213', '-381494', ContenedorTipo.ROPA).subscribe((results) => {
       console.log('contenedores', results);
@@ -39,6 +39,11 @@ export class HomePage {
 
   goToAroundMe() {
     this.navCtrl.push(AroundMePage);
+  }
+
+  switchLanguage(lang: string) {
+    console.log('Switch language ' + lang);
+    this.translate.use(lang);
   }
 
 }

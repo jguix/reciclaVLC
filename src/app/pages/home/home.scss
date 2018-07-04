@@ -39,4 +39,25 @@ page-home {
         // background-color: #9ec3f3;
     }
 
+    .flag {
+        width: 3em;
+        height: 2em;
+    }
+
+    /*
+     * Phoca Flags 1.0.0 by Jan Pavelka
+     * Copyright 2013 Jan Pavelka ( http://www.phoca.cz )
+     * License GNU General Public License version 3
+     */
+    /* catalonia */
+    .ca {
+        background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzUwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgNjc1IDQ1MCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPHBhdGggZmlsbD0iI2ZjZGQwOSIgZD0ibTAsMGg2NzV2NDUwaC02NzV6Ii8+DQo8cGF0aCBzdHJva2U9IiNkYTEyMWEiIGlkPSJyZWRfc3Ryb2tlIiBzdHJva2Utd2lkdGg9IjUwIiBkPSJtLTAsNzcuNzc3OGg2NzUiLz4NCjx1c2Ugd2lkdGg9IjY3NSIgaGVpZ2h0PSI0NTAiIHN0cm9rZT0iI2RhMTIxYSIgeGxpbms6aHJlZj0iI3JlZF9zdHJva2UiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgOTQuNDQ0NDQpIi8+DQo8dXNlIHdpZHRoPSI2NzUiIGhlaWdodD0iNDUwIiBzdHJva2U9IiNkYTEyMWEiIHhsaW5rOmhyZWY9IiNyZWRfc3Ryb2tlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDE5NC40NDQ0NCkiLz4NCjx1c2Ugd2lkdGg9IjY3NSIgaGVpZ2h0PSI0NTAiIHN0cm9rZT0iI2RhMTIxYSIgeGxpbms6aHJlZj0iI3JlZF9zdHJva2UiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMjk0LjQ0NDQ0KSIvPg0KPC9zdmc+DQo=');
+        background-size: 100% 100%;
+   }
+   /* spain */
+   .es {
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj4NCjxwYXRoIGZpbGw9IiNjNjBiMWUiIGQ9Im0wLDBoNzUwdjUwMGgtNzUweiIvPg0KPHBhdGggZmlsbD0iI2ZmYzQwMCIgZD0ibTAsMTI1aDc1MHYyNTBoLTc1MHoiLz4NCjwvc3ZnPg0K');
+        background-size: 100% 100%;
+   }
+   
 }

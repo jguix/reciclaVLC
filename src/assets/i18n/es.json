@@ -12,13 +12,17 @@
             }
         }
     },
-    "CONTAINER_NAME_PILAS": "pilas",
-    "CONTAINER_NAME_ACEITE": "aceite",
-    "CONTAINER_NAME_ROPA": "ropa",
-    "CONTAINER_NAME_RESIDUOS": "residuos",
-    "CONTAINER_NAME_ENVASES": "envases",
-    "CONTAINER_NAME_CARTON": "cartón",
-    "CONTAINER_NAME_VIDRIO": "vidrio",
-    "CONTAINER_NAME_ORGANICO": "orgánico",
-    "CONTAINER_NAME_PUNTO_VERDE": "punto verde"
+    "CONTAINER": {
+        "NAME": {
+            "PILAS": "pilas",
+            "ACEITE": "aceite",
+            "ROPA": "ropa",
+            "RESIDUOS": "residuos",
+            "ENVASES": "envases",
+            "CARTON": "cartón",
+            "VIDRIO": "vidrio",
+            "ORGANICO": "orgánico",
+            "PUNTO_VERDE": "punto verde"
+        }
+    }
 }

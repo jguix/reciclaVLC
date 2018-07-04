@@ -12,13 +12,17 @@
             }
         }
     },
-    "CONTAINER_NAME_PILAS": "piles",
-    "CONTAINER_NAME_ACEITE": "oli",
-    "CONTAINER_NAME_ROPA": "roba",
-    "CONTAINER_NAME_RESIDUOS": "residus",
-    "CONTAINER_NAME_ENVASES": "envasos",
-    "CONTAINER_NAME_CARTON": "cartó",
-    "CONTAINER_NAME_VIDRIO": "vidre",
-    "CONTAINER_NAME_ORGANICO": "orgànic",
-    "CONTAINER_NAME_PUNTO_VERDE": "punt verd"
+    "CONTAINER": {
+        "NAME": {
+            "PILAS": "piles",
+            "ACEITE": "oli",
+            "ROPA": "roba",
+            "RESIDUOS": "residus",
+            "ENVASES": "envasos",
+            "CARTON": "cartó",
+            "VIDRIO": "vidre",
+            "ORGANICO": "orgànic",
+            "PUNTO_VERDE": "punt verd"
+        }
+    }
 }
