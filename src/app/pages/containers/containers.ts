@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ContenedorTipo } from '../../services';
+import { ContenedorTipo } from '@app/services';
 
 @Component({
   selector: 'page-containers',

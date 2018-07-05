@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
-import { environment } from '../../../environments/environment';
-import { AppCiudadService, ContenedorTipo } from '../../services';
+import { environment } from '@env/environment';
+import { AppCiudadService, ContenedorTipo } from '@app/services';
 import { ContainersPage } from '../containers';
 import { MaterialsPage } from '../materials';
 import { AroundMePage } from '../around-me';

@@ -8,10 +8,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { App } from './app.component';
-import { HomePage } from './pages';
-import { AppCiudadService, AppCiudadRemote } from './services';
-import { AroundMePage, ContainersPage, MaterialsPage } from './pages';
-import { ContainerCardComponent } from './pages';
+import { HomePage } from '@app/pages';
+import { 
+  AppCiudadService, 
+  AppCiudadRemote 
+} from '@app/services';
+import { 
+  AroundMePage, 
+  ContainersPage, 
+  ContainerCardComponent, 
+  MaterialsPage 
+} from '@app/pages';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
