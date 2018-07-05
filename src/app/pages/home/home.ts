@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
-import { environment } from '@env/environment';
+import { environment } from '@env';
 import { AppCiudadService, ContenedorTipo } from '@app/services';
 import { ContainersPage } from '../containers';
 import { MaterialsPage } from '../materials';

@@ -1,6 +1,6 @@
 export const environment = {
-  production: true,
-  envName: 'prod',
+  production: false,
+  envName: 'dev',
   apiKey: 'username',
   apiSecret: 'password'
 };

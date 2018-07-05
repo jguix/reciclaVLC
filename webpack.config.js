@@ -1,27 +1,40 @@
-var path = require('path');
-var useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
+// See https://robferguson.org/blog/2017/11/22/working-with-typescript-webpack-and-ionic-3/
+const chalk = require("chalk");
+const fs = require('fs');
+const path = require('path');
+const useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
 
-// to match the basePath in tsconfig.json, we add src as a module path, which means we can use
-// module style imports for our code. Without this, an import that typescript thinks is valid, like
-// useDefaultConfig.dev.resolve.modules.push(path.resolve('src'));
-// useDefaultConfig.prod.resolve.modules.push(path.resolve('src'));
-useDefaultConfig.dev.resolve.alias = {
+const env = process.env.IONIC_ENV;
+// useDefaultConfig[env].resolve.modules.push(path.resolve('src'));
+
+if (env === 'prod' || env === 'dev') {
+  useDefaultConfig[env].resolve.alias = {
     "@app": path.resolve('./src/app/'),
     "@assets": path.resolve('./src/assets/'),
-    "@env": path.resolve('./src/environments/'),
+    "@env": path.resolve(environmentPath()),
     "@theme": path.resolve('./src/theme/')
-};
-
-useDefaultConfig.prod.resolve.alias = {
+  };
+} else {
+  // Default to dev config
+  useDefaultConfig[env] = useDefaultConfig.dev;
+  useDefaultConfig[env].resolve.alias = {
     "@app": path.resolve('./src/app/'),
     "@assets": path.resolve('./src/assets/'),
-    "@env": path.resolve('./src/environments/'),
+    "@env": path.resolve(environmentPath()),
     "@theme": path.resolve('./src/theme/')
-};
+  };
+}
 
-/**
- * export the update ionic webpack configs (this still includes both dev & prod webpack configs)
- */
+function environmentPath() {
+  let filePath = './src/environments/environment' + (env === 'prod' ? '' : '.' + env) + '.ts';
+
+  if (!fs.existsSync(filePath)) {
+    console.log(chalk.red('\n' + filePath + ' does not exist!'));
+  } else {
+    return filePath;
+  }
+}
+
 module.exports = function () {
   return useDefaultConfig;
 };
