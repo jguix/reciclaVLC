@@ -12,7 +12,8 @@ import { App } from './app.component';
 import { 
   AppCiudadService, 
   AppCiudadRemote,
-  ContainerService
+  ContainerService,
+  MaterialService
 } from '@app/services';
 
 // Custom components
@@ -39,7 +40,8 @@ const CUSTOM_COMPONENTS: Array<Type<any>> = [
 const CUSTOM_SERVICES: Array<Type<any>> = [
   AppCiudadService, 
   AppCiudadRemote,
-  ContainerService
+  ContainerService,
+  MaterialService
 ];
 
 export function createTranslateLoader(http: HttpClient) {

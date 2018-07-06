@@ -24,5 +24,23 @@
             "ORGANICO": "orgànic",
             "PUNTO_VERDE": "punt verd"
         }
+    },
+    "MATERIAL": {
+        "NAME": {
+            "GLASS": "vidre",
+            "CARDBOARD": "cartó",
+            "PAPER": "paper",
+            "PLASTIC": "plàstic",
+            "TETRA_BRIK": "tetra brik",
+            "CORK": "suro",
+            "OIL": "oli",
+            "ORGANIC": "orgànic",
+            "CLOTHING": "roba",
+            "BATTERIES": "piles",
+            "WOOD": "fusta",
+            "METAL": "metall",
+            "CERAMICS": "ceràmica",
+            "GENERAL_WASTE": "deixalles"
+        }
     }
 }

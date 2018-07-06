@@ -24,5 +24,23 @@
             "ORGANICO": "orgánico",
             "PUNTO_VERDE": "punto verde"
         }
+    },
+    "MATERIAL": {
+        "NAME": {
+            "GLASS": "vidrio",
+            "CARDBOARD": "cartón",
+            "PAPER": "papel",
+            "PLASTIC": "plástico",
+            "TETRA_BRIK": "tetra brik",
+            "CORK": "corcho",
+            "OIL": "aceite",
+            "ORGANIC": "orgánico",
+            "CLOTHING": "ropa",
+            "BATTERIES": "pilas",
+            "WOOD": "madera",
+            "METAL": "metal",
+            "CERAMICS": "cerámica",
+            "GENERAL_WASTE": "desechos"
+        }
     }
 }

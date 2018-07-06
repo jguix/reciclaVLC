@@ -6,18 +6,13 @@
 
 <ion-content>
   <ion-list>
-    <ion-item detail-push (click)="goToMaterial('cartó')">
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/logo.png">
-      </ion-thumbnail>
-      <h2>Cartó</h2>
-    </ion-item>
 
-    <ion-item detail-push (click)="goToMaterial('fusta')">
+    <ion-item *ngFor="let material of materials" detail-push (click)="goToMaterial(material)">
       <ion-thumbnail item-start>
         <img src="assets/imgs/logo.png">
       </ion-thumbnail>
-      <h2>Fusta</h2>
+      <h2>{{ 'MATERIAL.NAME.' + material | uppercase | translate | uppercase }}</h2>
     </ion-item>
+    
   </ion-list>
 </ion-content>
