@@ -1,24 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, Type } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
 import { App } from './app.component';
-import { HomePage } from '@app/pages';
+
+// Custom services
 import { 
   AppCiudadService, 
-  AppCiudadRemote 
+  AppCiudadRemote,
+  ContainerService
 } from '@app/services';
+
+// Custom components
 import { 
-  AroundMePage, 
-  ContainersPage, 
-  ContainerCardComponent, 
-  MaterialsPage 
+  AroundMePage,
+  ContainerPage,
+  ContainersPage,
+  ContainerCardComponent,
+  HomePage,
+  MaterialsPage,
+  MaterialPage
 } from '@app/pages';
+
+const CUSTOM_COMPONENTS: Array<Type<any>> = [
+  AroundMePage,
+  ContainerPage,
+  ContainersPage,
+  ContainerCardComponent,
+  HomePage,
+  MaterialPage,
+  MaterialsPage
+];
+
+const CUSTOM_SERVICES: Array<Type<any>> = [
+  AppCiudadService, 
+  AppCiudadRemote,
+  ContainerService
+];
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,11 +49,7 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     App,
-    AroundMePage,
-    ContainersPage,
-    MaterialsPage,
-    HomePage,
-    ContainerCardComponent,
+    ...CUSTOM_COMPONENTS,
   ],
   imports: [
     BrowserModule,
@@ -48,18 +66,13 @@ export function createTranslateLoader(http: HttpClient) {
   bootstrap: [IonicApp],
   entryComponents: [
     App,
-    AroundMePage,
-    ContainersPage,
-    MaterialsPage,
-    HomePage,
-    ContainerCardComponent,
+    ...CUSTOM_COMPONENTS,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    AppCiudadRemote,
-    AppCiudadService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ...CUSTOM_SERVICES
   ]
 })
 export class AppModule {}

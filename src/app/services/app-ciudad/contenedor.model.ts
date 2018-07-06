@@ -1,4 +1,4 @@
-import { ContenedorTipo } from './contenedor-tipo.model';
+import { ContenedorTipo } from "@app/services/container";
 
 export interface Contenedor {
     lat: number;

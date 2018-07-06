@@ -1,0 +1,29 @@
+page-material {
+    font-family: 'Montserrat', sans-serif;
+    .material-grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    ion-card {
+        position: relative;
+        text-align: center;
+    }
+    
+    .material-info-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .material-info-card-content {
+        flex: 1;
+    }
+
+    .material-info-card-title {
+        background-color: #a6dba6;
+        font-weight: 800;
+        color: #f6fff6
+    }
+}

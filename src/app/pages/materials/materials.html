@@ -5,7 +5,27 @@
 </ion-header>
 
 <ion-content>
-  <div class="materials-list">
-
-  </div>
+  <!--div class="materials-list"-->
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/logo.png">
+      </ion-thumbnail>
+      <h2>Cartó</h2>
+      <button (click)="goToMaterial('cartó')" ion-button clear item-end>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+    
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/logo.png">
+      </ion-thumbnail>
+      <h2>Fusta</h2>
+      <button (click)="goToMaterial('fusta')" ion-button clear item-end>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <!--/div-->
 </ion-content>

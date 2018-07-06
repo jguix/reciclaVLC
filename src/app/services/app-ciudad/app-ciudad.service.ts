@@ -3,8 +3,8 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { AppCiudadRemote } from './app-ciudad.remote';
 import { Contenedor } from './contenedor.model';
-import { ContenedorTipo } from './contenedor-tipo.model';
 import { CDMResult } from './cdm.model';
+import { ContenedorTipo } from '@app/services';
 
 @Injectable()
 export class AppCiudadService {

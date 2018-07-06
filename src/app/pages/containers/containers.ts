@@ -1,25 +1,14 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { ContenedorTipo } from '@app/services';
+import { ContenedorTipo, ContainerService } from '@app/services';
 
 @Component({
   selector: 'page-containers',
   templateUrl: 'containers.html'
 })
 export class ContainersPage {
-  containerTypes: Array<ContenedorTipo> = [
-    ContenedorTipo.ACEITE,
-    ContenedorTipo.CARTON,
-    ContenedorTipo.ENVASES,
-    ContenedorTipo.ORGANICO,
-    ContenedorTipo.PILAS,
-    ContenedorTipo.PUNTO_VERDE,
-    ContenedorTipo.RESIDUOS,
-    ContenedorTipo.ROPA,
-    ContenedorTipo.VIDRIO,
-  ];
+  containerTypes: Array<ContenedorTipo>;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(private containerService: ContainerService) {
+    this.containerTypes = this.containerService.getContainerTypes();
   }
 }
