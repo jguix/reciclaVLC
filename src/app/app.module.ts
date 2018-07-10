@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule, Type } from '@angular/core';
+import { ErrorHandler, NgModule, Type, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -26,6 +26,7 @@ import {
   MaterialsPage,
   MaterialPage
 } from '@app/pages';
+import '@assets/lib/components/my-google-maps/dist/mycomponent'
 
 const CUSTOM_COMPONENTS: Array<Type<any>> = [
   AroundMePage,
@@ -75,6 +76,7 @@ export function createTranslateLoader(http: HttpClient) {
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ...CUSTOM_SERVICES
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
