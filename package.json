@@ -13,8 +13,8 @@
   },
   "config": {
     "ionic_source_map_type": "source-map",
-    "ionic_webpack": "./webpack.config.js",
-    "ionic_copy": "./copy.config.js"
+    "ionic_webpack": "./config/webpack.config.js",
+    "ionic_copy": "./config/copy.config.js"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",

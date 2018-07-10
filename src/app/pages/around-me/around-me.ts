@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MyGoogleMapsMarker } from '@assets/lib/components/my-google-maps/dist/types/components/my-google-maps/my-google-maps';
+import { MyGoogleMapsMarker } from '@assets/lib/components/my-google-maps/dist/types/components/my-component/rv-google-maps';
 
 @Component({
   selector: 'page-around-me',

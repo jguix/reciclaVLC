@@ -1,4 +1,7 @@
-// See https://robferguson.org/blog/2017/11/22/working-with-typescript-webpack-and-ionic-3/
+/**
+ * Custom webpack config, needed to make aliases work in ionic
+ * See https://robferguson.org/blog/2017/11/22/working-with-typescript-webpack-and-ionic-3/
+ */
 const chalk = require("chalk");
 const fs = require('fs');
 const path = require('path');

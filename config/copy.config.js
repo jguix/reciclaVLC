@@ -1,6 +1,7 @@
 /**
+ * Custom copy config, needed to copy custom components
  * The component lib installed under assets/lib is not automatically included in the vendor.js file
- * Therefore it needs to be copied.
+ * See https://forum.ionicframework.com/t/example-integration-stenciljs-web-component-in-ionic-app/106083/5
  */
 module.exports = {
   copyTimeAgoWebComponent: {
